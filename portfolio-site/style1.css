@@ -135,7 +135,7 @@ section:nth-of-type(4) { animation-delay: 1.5s; }
     font-size: 1.2rem;
     background: #121212;
     color: #ffd700;
-    border: 2px solid #ffd700;
+    border: 2px solid #00f5c6;
     border-radius: 15px;
     box-shadow: 0 0 10px #ffd700;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -159,13 +159,47 @@ section:nth-of-type(4) { animation-delay: 1.5s; }
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     animation: slideInLeft 1.5s ease-in-out;
 }
+.project-card .view-link {
+    color: #ffd700; /* Golden color */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: 1rem;
+}
 
+.project-card .view-link:hover {
+    color: #00f5c6;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px #00f5c6;
+}
+.github-link {
+    color: #00f5c6; /* Pink color example */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.github-link:hover {
+    color: #00f5c6; /* Your glowing theme color */
+    transform: scale(1.05);
+    text-shadow: 0 0 10px #00f5c6;
+}
 .project-card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 30px rgba(0, 245, 198, 0.8);
 }
 
-.contact-form input, .contact-form textarea {
+/* Contact Section */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form input,
+.contact-form textarea {
     width: 80%;
     max-width: 500px;
     margin: 1rem auto;
@@ -173,14 +207,15 @@ section:nth-of-type(4) { animation-delay: 1.5s; }
     font-size: 1rem;
     color: #fff;
     background: #121212;
-    border: 2px solid #ffd700;
+    border: 2px solid #00f5c6;
     border-radius: 10px;
     outline: none;
     transition: box-shadow 0.3s ease;
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
-    box-shadow: 0 0 15px #ffd700;
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 15px #00f5c6;
 }
 
 .contact-form button {
@@ -193,6 +228,7 @@ section:nth-of-type(4) { animation-delay: 1.5s; }
     cursor: pointer;
     box-shadow: 0 0 20px #00f5c6;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1rem;
 }
 
 .contact-form button:hover {
@@ -294,7 +330,7 @@ footer {
 @keyframes colorChange {
     0% { color: #00f5c6; }
     25% { color: #fff; }
-    50% { color: #ffd700; }
+    50% { color: #000000; }
     75% { color: #00f5c6; }
     100% { color: #fff; }
 }
